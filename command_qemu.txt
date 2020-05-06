@@ -1,0 +1,10 @@
+ 1975  sudo apt install stlink-tools
+ 1976  cd
+ 1977  nano .bashrc 
+ 1978  source .bashrc
+ 1979  echo $PATH
+ 1980  cd /home/biowar1337/opt/Lab1
+ 1981  ls
+ 1982  qemu-system-gnuarmeclipse --verbose --verbose --board STM32F4-Discovery --mcu STM32F407VG -d unimp,guest_errors --image firmware.bin --semihosting-config enable=on,target=native -s -S
+ 1983  history | tail
+ 1984  history | tail | cat > command_qemu.txt
